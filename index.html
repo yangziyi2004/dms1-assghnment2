@@ -13,7 +13,7 @@
         .image-container{
             display: table-cell;
             vertical-align: middle;
-            padding: 20px;
+            padding: 40px;
         }
        </style>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
@@ -22,37 +22,58 @@
     <body style="background-color: lightblue;" >
         
         <div class="row">
-            <div class="image-container"><img id="donut1" src="imgs/image11.png" width="10" /></div>
-            <div class="image-container"><img id="donut2" src="imgs/image22.png" width="30"/></div>
-            <div class="image-container"><img id="donut2" src="imgs/image33.png" width="60"/></div>
+            <div class="image-container"><img id="donut1" src="imgs/image11.png" onmouseover="this.src='imgs/image110.png';"onmouseout="this.src='imgs/image11.png'"width="200"/></div>
+            <div class="image-container"><img id="donut2" src="imgs/image22.png" onmouseover="this.src='imgs/image220.png';"onmouseout="this.src='imgs/image22.png'"width="200"/></div>
+            <div class="image-container"><img id="donut3" src="imgs/image33.png" onmouseover="this.src='imgs/image330.png';"onmouseout="this.src='imgs/image33.png'"width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img id="donut1" src="imgs/image44.png" width="200"/></div>
-            <div class="image-container"><img id="donut2" src="imgs/image.jpeg" width="200"/></div>
-            <div class="image-container"><img id="donut2" src="imgs/image1.jpeg" width="200"/></div>
+            <div class="image-container"><img id="donut4" src="imgs/image44.png" onmouseover="this.src='imgs/image440.png';"onmouseout="this.src='imgs/image44.png'"width="200"/></div>
+            <div class="image-container"><img id="donut5" src="imgs/image55.png" onmouseover="this.src='imgs/image550.png';"onmouseout="this.src='imgs/image55.png'"width="200"/></div>
+            <div class="image-container"><img id="donut6" src="imgs/image66.png" onmouseover="this.src='imgs/image660.png';"onmouseout="this.src='imgs/image66.png'"width="200"/></div>
         </div>
         
         <div class="row">
-            <div class="image-container"><img id="donut1" src="imgs/image1.jpeg" width="200"/></div>
-            <div class="image-container"><img id="donut2" src="imgs/image1.jpeg" width="200"/></div>
-            <div class="image-container"><img id="donut2" src="imgs/image1.jpeg" width="200"/></div>
+            <div class="image-container"><img id="donut7" src="imgs/image77.png" onmouseover="this.src='imgs/image770.png';"onmouseout="this.src='imgs/image77.png'"width="200"/></div>
+            <div class="image-container"><img id="donut8" src="imgs/image88.png" onmouseover="this.src='imgs/image880.png';"onmouseout="this.src='imgs/image88.png'"width="200"/></div>
+            <div class="image-container"><img id="donut9" src="imgs/image99.png" onmouseover="this.src='imgs/image990.png';"onmouseout="this.src='imgs/image99.png'"width="200"/></div>
         </div>
          
         
         <script>
-           var sound1 = new buzz.sound("sound/glitch1.mp3");
-           var sound2 = new buzz.sound("sound/glitch1.mp3");
-           var sound3 = new buzz.sound("sound/glitch1.mp3");
+           var sound1 = new buzz.sound("sound/sound1.mp3");
+           var sound2 = new buzz.sound("sound/sound2.mp3");
+           var sound3 = new buzz.sound("sound/sound3.mp3");
+           var sound4 = new buzz.sound("sound/sound4.mp3");
+           var sound5 = new buzz.sound("sound/sound5.mp3");
+           var sound6 = new buzz.sound("sound/sound6.mp3");
+           var sound7 = new buzz.sound("sound/sound7.mp3");
+           var sound8 = new buzz.sound("sound/sound8.mp3");
+           var sound9 = new buzz.sound("sound/sound9.mp3");
+
 
            window.onload = function() {
               document.getElementById('donut1').addEventListener('click', function() {sound1.play();});
               document.getElementById('donut2').addEventListener('click', function() {sound2.play();});
               document.getElementById('donut3').addEventListener('click', function() {sound3.play();});
+              document.getElementById('donut4').addEventListener('click', function() {sound4.play();});
+              document.getElementById('donut5').addEventListener('click', function() {sound5.play();});
+              document.getElementById('donut6').addEventListener('click', function() {sound6.play();});
+              document.getElementById('donut7').addEventListener('click', function() {sound7.play();});
+              document.getElementById('donut8').addEventListener('click', function() {sound8.play();});
+              document.getElementById('donut9').addEventListener('click', function() {sound9.play();});
 
-              document.getElementById('donut1').addEventListener('mouseover', function() {sound.play();});
-              document.getElementById('donut2').addEventListener('mouseover', function() {sound3.play();});
+
+              document.getElementById('donut1').addEventListener('mouseover', function() {sound1.play();});
+              document.getElementById('donut2').addEventListener('mouseover', function() {sound2.play();});
               document.getElementById('donut3').addEventListener('mouseover', function() {sound3.play();});
+              document.getElementById('donut4').addEventListener('mouseover', function() {sound4.play();});
+              document.getElementById('donut5').addEventListener('mouseover', function() {sound5.play();});
+              document.getElementById('donut6').addEventListener('mouseover', function() {sound6.play();});
+              document.getElementById('donut7').addEventListener('mouseover', function() {sound7.play();});
+              document.getElementById('donut8').addEventListener('mouseover', function() {sound8.play();});
+              document.getElementById('donut9').addEventListener('mouseover', function() {sound9.play();});
+
 
            };
         </script>
