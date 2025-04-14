@@ -1,0 +1,38 @@
+<html>
+    <head>
+       <title>harperrr
+
+       </title> 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: lightblue;" >
+        <!-- <h1>
+            Hello World
+        </h1>
+        <h2>
+            this me first website
+        </h2>
+        <p>
+            Here's some text.
+        </p>
+        <p>
+            this is first sentence before the break
+            <br>
+            this is the second sentence after the break
+        </p>  -->
+        <img id="donut1" src="imgs/image1.jpeg" width="200"/>
+        <img id="donut2" src="imgs/image1.jpeg" width="200"/>
+        <img id="donut3" src="imgs/image1.jpeg" width="200"/>
+
+        <script>
+           var sound1 = new buzz.sound("sound/glitch1.mp3");
+           var sound2 = new buzz.sound("sound/glitch1.mp3");
+           var sound3 = new buzz.sound("sound/RMITUniversity6.m4a");
+
+           window.onload = function() {
+              document.getElementById('donut1').addEventListener('click', function() {sound1.play();});
+           };
+        </script>
+    </body>
+</html>
