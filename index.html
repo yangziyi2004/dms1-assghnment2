@@ -3,35 +3,57 @@
        <title>harperrr
 
        </title> 
+
+       <style>
+        .row{
+            width: 720px;
+            margin:10px auto 10px auto;
+        }
+
+        .image-container{
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+        }
+       </style>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
     </head>
 
     <body style="background-color: lightblue;" >
-        <!-- <h1>
-            Hello World
-        </h1>
-        <h2>
-            this me first website
-        </h2>
-        <p>
-            Here's some text.
-        </p>
-        <p>
-            this is first sentence before the break
-            <br>
-            this is the second sentence after the break
-        </p>  -->
-        <img id="donut1" src="imgs/image1.jpeg" width="200"/>
-        <img id="donut2" src="imgs/image1.jpeg" width="200"/>
-        <img id="donut3" src="imgs/image1.jpeg" width="200"/>
+        
+        <div class="row">
+            <div class="image-container"><img id="donut1" src="imgs/image11.png" width="10" /></div>
+            <div class="image-container"><img id="donut2" src="imgs/image22.png" width="30"/></div>
+            <div class="image-container"><img id="donut2" src="imgs/image33.png" width="60"/></div>
+        </div>
 
+        <div class="row">
+            <div class="image-container"><img id="donut1" src="imgs/image44.png" width="200"/></div>
+            <div class="image-container"><img id="donut2" src="imgs/image.jpeg" width="200"/></div>
+            <div class="image-container"><img id="donut2" src="imgs/image1.jpeg" width="200"/></div>
+        </div>
+        
+        <div class="row">
+            <div class="image-container"><img id="donut1" src="imgs/image1.jpeg" width="200"/></div>
+            <div class="image-container"><img id="donut2" src="imgs/image1.jpeg" width="200"/></div>
+            <div class="image-container"><img id="donut2" src="imgs/image1.jpeg" width="200"/></div>
+        </div>
+         
+        
         <script>
            var sound1 = new buzz.sound("sound/glitch1.mp3");
            var sound2 = new buzz.sound("sound/glitch1.mp3");
-           var sound3 = new buzz.sound("sound/RMITUniversity6.m4a");
+           var sound3 = new buzz.sound("sound/glitch1.mp3");
 
            window.onload = function() {
               document.getElementById('donut1').addEventListener('click', function() {sound1.play();});
+              document.getElementById('donut2').addEventListener('click', function() {sound2.play();});
+              document.getElementById('donut3').addEventListener('click', function() {sound3.play();});
+
+              document.getElementById('donut1').addEventListener('mouseover', function() {sound.play();});
+              document.getElementById('donut2').addEventListener('mouseover', function() {sound3.play();});
+              document.getElementById('donut3').addEventListener('mouseover', function() {sound3.play();});
+
            };
         </script>
     </body>
